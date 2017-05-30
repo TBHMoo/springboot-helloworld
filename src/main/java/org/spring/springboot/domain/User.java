@@ -5,18 +5,14 @@ import org.springframework.stereotype.Component;
 import java.io.Serializable;
 
 /**
- * Created by xli on 2017/3/5.
+ * Created by xli on 2017/5/19.
  */
 @Component
-//@ConfigurationProperties(prefix = "yourcity")
-public class City implements Serializable {
-
-
+public class User implements Serializable{
     private static final long serialVersionUID = -1L;
 
     private Long id;
-    private Long provinceId;
-    private String cityName;
+    private String userName;
     private String description;
 
     public Long getId() {
@@ -27,20 +23,12 @@ public class City implements Serializable {
         this.id = id;
     }
 
-    public Long getProvinceId() {
-        return provinceId;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setProvinceId(Long provinceId) {
-        this.provinceId = provinceId;
-    }
-
-    public String getCityName() {
-        return cityName;
-    }
-
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getDescription() {

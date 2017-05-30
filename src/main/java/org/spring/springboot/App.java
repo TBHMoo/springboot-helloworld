@@ -1,16 +1,17 @@
 package org.spring.springboot;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 /**
  * Hello world!
  *
  */
+@EnableAspectJAutoProxy //依赖spring aop 模块之后默认开启 java 动态代理
 @SpringBootApplication
-@MapperScan("org.spring.springboot.dao")
+//@MapperScan("org.spring.springboot.dao")
 public class App  extends SpringBootServletInitializer
 {
 //    @Override

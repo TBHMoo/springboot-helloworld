@@ -7,4 +7,13 @@ import org.spring.springboot.domain.City;
  */
 public interface CityService {
     City findCityByName(String cityName);
+
+    Long saveCity(City city);
+
+    City findCityById(Long id);
+
+    Long updateCity(City city);
+
+    Long deleteCity(Long id);
+
 }
